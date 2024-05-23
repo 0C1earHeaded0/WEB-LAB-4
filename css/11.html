@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 0, 234);
+        transition: width 1s, height 1s, background-color 1s;
+        margin-bottom: 50px;
+      }
+      .box:hover {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 195, 255);
+      }
+    </style>
+    <style>
+      @keyframes move {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(200px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: move 2s infinite;
+      }
+    </style>
+    <style>
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 255, 42);
+        transition: background-color 1s;
+      }
+      .box2:hover {
+        background-color: rgb(0, 183, 255);
+      }
+      .box2.active {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2" onclick="toggleActive()"></div>
+    <script>
+      function toggleActive() {
+        var box = document.querySelector(".box2");
+        box.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
