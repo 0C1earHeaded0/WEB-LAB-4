@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      div#container {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .intro {
+        padding: 10px 0;
+        font-weight: bold;
+      }
+
+      #container p:first-child {
+        background-color: lightblue;
+      }
+
+      p:first-child {
+        color: red;
+      }
+
+      button::before {
+        content: "***";
+      }
+
+      button::after {
+        content: "***";
+      }
+
+      input::placeholder {
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p class="intro">Это первый параграф.</p>
+      <p>Это уже второй параграф.</p>
+      <button type="button" class="btn">Кнопка</button>
+      <input type="text" placeholder="Поле ввода" />
+    </div>
+  </body>
+</html>

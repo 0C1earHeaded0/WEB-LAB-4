@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      a {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+      }
+
+      nav {
+        background-color: aliceblue;
+      }
+
+      .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0 40px;
+      }
+
+      .nav-item {
+        position: relative;
+        display: inline-block;
+        padding: 10px 40px;
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-item:hover {
+        background-color: #ceb2b2;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </head>
+  </body>
 </html>
